@@ -4,9 +4,6 @@ import { CreateContentModal } from "../../components/CreateContentModal";
 import { Mainlogo } from "../../components/logo";
 import { MainContainer, TopMainBar } from "../../components/MainBarcomponents";
 import { SideBarAttribute } from "../../components/Sidebarcomponents";
-import { Documentlogo } from "../../icons/Documents";
-import { LinkLogo } from "../../icons/Links";
-import { TagLogo } from "../../icons/tags";
 import { VideoIcon } from "../../icons/video";
 import { Xlogo } from "../../icons/Xlogo";
 import { useContent } from "../../hooks/useContent";
@@ -24,11 +21,8 @@ export const DashBoard = () => {
         <div className="w-64 h-screen bg-primary border-r fixed  flex flex-col shadow-[2px_0_15px_rgba(0,0,0,0.1)]">
             <div className="mt-2 ml-2"><Mainlogo size="lg"/></div>
             <div className="flex flex-col my-10 mx-5">
-                <SideBarAttribute text="Tweets" logo={<Xlogo size="lg"/>} onClick={()=>{}}/>
-                <SideBarAttribute text="Videos" logo={<VideoIcon  size="lg"/>} onClick={()=>{}}/>
-                <SideBarAttribute text="Documents" logo={<Documentlogo  size="lg"/>} onClick={()=>{}}/>
-                <SideBarAttribute text="links" logo={<LinkLogo  size="lg"/>} onClick={()=>{}}/>
-                <SideBarAttribute text="Tags" logo={<TagLogo  size="lg"/>} onClick={()=>{}}/>
+                <SideBarAttribute text="Twitter" logo={<Xlogo size="lg"/>} onClick={()=>{}}/>
+                <SideBarAttribute text="Youtube" logo={<VideoIcon  size="lg"/>} onClick={()=>{}}/>
             </div>
         </div>
 
