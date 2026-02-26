@@ -21,7 +21,7 @@ export const TopMainBar = ({onOpen}: {onOpen: ()=>void}) =>{  // directly type c
                     }
                 });
                 const ShareUrl = `http://127.0.0.1:5173/share/${response.data.hash}` ;
-                alert(ShareUrl);
+                window.open(ShareUrl, "_blank");
             }}/> </div>
         </div>
     </div>
